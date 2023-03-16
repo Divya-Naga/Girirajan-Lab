@@ -1,4 +1,4 @@
-1. Go through the DESeq2 links.
+1. Go through the DESeq2 links. Completed March 1st, 2023
 2. From the shared transcript count matrix, pick these 6 columns and create a smaller matrix.
     - SEEM.WT.CTL1A
     - SEEM.WT.CTL2A 
@@ -6,7 +6,8 @@
     - SEDM.WT.CTL1A
     - SEDM.WT.CTL2A
     - SEDM.WT.CTL3A
-3. Create a design matrix for the columns with SEEM as control and SEDM as treated.
-4. Create a DESeq2 script to perform differential expression.
-5. Run DESeq2 script
-6. List out the differentially expressed transcripts.
+    Completed March 14th, 2023
+3. Create a design matrix for the columns with SEEM as control and SEDM as treated. Completed March 14th, 2023
+4. Create a DESeq2 script to perform differential expression. Completed March 14th, 2023
+5. Run DESeq2 script Completed March 14th, 2023
+6. List out the differentially expressed transcripts. Completed March 14th, 2023
