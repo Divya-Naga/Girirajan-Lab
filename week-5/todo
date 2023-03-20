@@ -1,0 +1,5 @@
+1. Parse gtf file to get transcript id to gene name mappings
+2. Get the transcripts from SEDM vs SEEM analysis on week 2 that were significantly DESeq
+3. map those transcripts to their gene names
+4. get the gene names that were significantly DE from A687_24hr vs Nalm6_0hr analysis in week 4
+5. Create a venn diagram displaying intersection between the singnificantly DE genes from both analysis
