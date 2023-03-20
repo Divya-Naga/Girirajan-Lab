@@ -5,11 +5,11 @@ library("DESeq2")
 args <- commandArgs(trailingOnly=TRUE)
 # check to see that one argument is given
 if (length(args)!=10) {
-  stop("Please provide a valid individual_count_files_control, individual_count_files_replicate, meta_counts_filename, res_filename, normalized_filename and tmp_dir", call.=FALSE)
+  stop("Please provide a valid individual_count_files_control, individual_count_files_treated, meta_counts_filename, res_filename, normalized_filename and tmp_dir", call.=FALSE)
 }
 
 individual_count_files_control = as.character(c(args[1],args[2],args[3]))
-individual_count_files_replicate = as.character(c(args[4],args[5],args[6]))
+individual_count_files_treated = as.character(c(args[4],args[5],args[6]))
 meta_counts_filename = args[7]
 res_filename = args[8]
 normalized_filename = args[9]
@@ -24,8 +24,8 @@ for (i in 1:length(individual_count_files_control)){
 }
 
 #Extracting the treated sample replicates 
-for (i in 1:length(individual_count_files_replicate)){
-  metadata <- read.table(gzfile(individual_count_files_replicate[i]), header= TRUE) 
+for (i in 1:length(individual_count_files_treated)){
+  metadata <- read.table(gzfile(individual_count_files_treated[i]), header= TRUE) 
   n<-dim(metadata)[1]
   metadata <- metadata[1:(n-5),]
   assign(paste0("A687_24hr_Pred_Rep",i),metadata)
@@ -64,7 +64,7 @@ dds$condition <- relevel(dds$condition, ref = "control")
 dds <- DESeq(dds) # performs Differential Gene Expression Analysis
 
 # Result 
-res <- results(dds, alpha = 0.05) # cut-off p-value < 0.05  
+res <- results(dds)  
 res <- res[order(res$padj),] # ordered w.r.t p values
 
 #Output result file
