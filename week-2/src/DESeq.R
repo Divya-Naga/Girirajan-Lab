@@ -44,9 +44,8 @@ dds$condition <- relevel(dds$condition, ref = "control")
 dds <- DESeq(dds) # performs Differential Gene Expression Analysis
 
 # Result 
-res <- results(dds)  
+res <- results(dds,alpha=0.05)  
 res <- res[order(res$padj),] # ordered w.r.t p values
-
 #Output result file
 write.csv(as.data.frame(res), file=res_filename)
 
