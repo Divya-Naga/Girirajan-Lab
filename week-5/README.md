@@ -1,5 +1,5 @@
 # Week-5
-## Intersection of between the singnificantly DE genes from SEDM vs SEEM analysis and A687 (24hr) vs Nalm6 (0hr) analysis
+## Intersection of between the significantly DE genes from SEDM vs SEEM analysis and A687 (24hr) vs Nalm6 (0hr) analysis
 <img src="https://github.com/Divya-Naga/Girirajan-Lab/blob/main/week-5/results/intersection_significant_DE_genes.png">
 The venn diagram shows that 6 genes are shared by both the analysis of genes with significant Differential Expression.
 
