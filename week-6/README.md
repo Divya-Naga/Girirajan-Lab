@@ -2,7 +2,7 @@
 ##  Overlapping SDE genes between the dox1E210vsdox1 and dox1vsdox0 (padj <0.05)
 
 ### Dot Plot with top 20 enriched terms
-<img src="https://github.com/Divya-Naga/Girirajan-Lab/blob/main/Girirajan-Lab/week-6/results/Dot_Plot.png">
+<img src="https://github.com/Divya-Naga/Girirajan-Lab/blob/main/week-6/results/Dot_Plot.png">
 
 ### Example R Script
 
