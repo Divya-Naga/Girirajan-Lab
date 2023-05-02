@@ -1,3 +1,3 @@
-1. Check overlapping SDE genes between the two files (padj <0.05)
-2. RUN GSEA on these genes
-3. Create a dot plot with the top 20 enriched terms
+1. Check overlapping SDE genes between the two files (padj <0.05) 25 April 2023
+2. RUN GSEA on these genes 25 April 2023
+3. Create a dot plot with the top 20 enriched terms 25 April 2023
